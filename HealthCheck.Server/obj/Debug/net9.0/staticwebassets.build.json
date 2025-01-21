@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "kThetMSZmx/Z5lj6KV+3OS4N4kxkeQE6k3ZCEEsXUFo=",
+  "Source": "HealthCheck.Server",
+  "BasePath": "_content/HealthCheck.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\CanovaMW\\repos\\Personal\\full-stack\\ASP.NET-Core-8-and-Angular\\Personal\\HealthCheck\\healthcheck.client\\healthcheck.client.esproj",
+      "Version": 2,
+      "Source": "healthcheck.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

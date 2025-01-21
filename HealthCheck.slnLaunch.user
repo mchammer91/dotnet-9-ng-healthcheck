@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "HealthCheck.Server\\HealthCheck.Server.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "healthcheck.client\\healthcheck.client.esproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

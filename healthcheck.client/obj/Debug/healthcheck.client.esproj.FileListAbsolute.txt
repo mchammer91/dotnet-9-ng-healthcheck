@@ -1,0 +1,1 @@
+C:\Users\CanovaMW\repos\Personal\full-stack\ASP.NET-Core-8-and-Angular\Personal\HealthCheck\healthcheck.client\obj\Debug\healthcheck.client.esproj.CoreCompileInputs.cache

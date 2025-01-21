@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:61164",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\CanovaMW\\repos\\Personal\\full-stack\\ASP.NET-Core-8-and-Angular\\Personal\\HealthCheck\\HealthCheck.Server\\..\\healthcheck.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\CanovaMW\\repos\\Personal\\full-stack\\ASP.NET-Core-8-and-Angular\\Personal\\HealthCheck\\healthcheck.client\\healthcheck.client.esproj": {}
+  },
+  "projects": {
+    "C:\\Users\\CanovaMW\\repos\\Personal\\full-stack\\ASP.NET-Core-8-and-Angular\\Personal\\HealthCheck\\healthcheck.client\\healthcheck.client.esproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\CanovaMW\\repos\\Personal\\full-stack\\ASP.NET-Core-8-and-Angular\\Personal\\HealthCheck\\healthcheck.client\\healthcheck.client.esproj",
+        "projectName": "healthcheck.client",
+        "projectPath": "C:\\Users\\CanovaMW\\repos\\Personal\\full-stack\\ASP.NET-Core-8-and-Angular\\Personal\\HealthCheck\\healthcheck.client\\healthcheck.client.esproj",
+        "packagesPath": "C:\\Users\\CanovaMW\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CanovaMW\\repos\\Personal\\full-stack\\ASP.NET-Core-8-and-Angular\\Personal\\HealthCheck\\healthcheck.client\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CanovaMW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-none": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0-none": {
+          "targetAlias": "net6.0"
+        }
+      }
+    }
+  }
+}

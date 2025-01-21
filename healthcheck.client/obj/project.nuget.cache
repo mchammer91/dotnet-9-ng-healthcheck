@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "oUJdEIYb/Wo=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\CanovaMW\\repos\\Personal\\full-stack\\ASP.NET-Core-8-and-Angular\\Personal\\HealthCheck\\healthcheck.client\\healthcheck.client.esproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net6.0-none"
+    }
+  ]
+}
