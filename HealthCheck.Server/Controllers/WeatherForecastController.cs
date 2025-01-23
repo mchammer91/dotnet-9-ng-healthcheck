@@ -2,8 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HealthCheck.Server.Controllers
 {
+    /*
+     * Could be better to create BaseApiController and have controller inherit from that 
+     * like recommended here: https://stackoverflow.com/a/78762495 to provide functionality like default route prefix
+     */
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")] 
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
