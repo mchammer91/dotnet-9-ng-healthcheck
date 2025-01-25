@@ -1,6 +1,12 @@
+global using HealthCheck.Server;
+global using HealthCheck.Server.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddHealthChecks()
+    .AddCheck<ICMPHealthCheck>("IMCP");
+
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -23,6 +29,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseHealthChecks(new PathString("/api/health"));
 
 app.MapControllers();
 
