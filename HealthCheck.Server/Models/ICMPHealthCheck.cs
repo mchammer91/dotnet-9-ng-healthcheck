@@ -7,28 +7,33 @@ namespace HealthCheck.Server.Models;
 
 public class ICMPHealthCheck : IHealthCheck
 {
-    private readonly string Host = $"10.0.0.0"; // always unreachable so always returns Unhealthy for demo purposes 
-    private readonly int HealthyRoundTripTime = 300;
+    private readonly string _host; 
+    private readonly int _healthyRoundTripTime;
     
+    public ICMPHealthCheck(string host, int healthyRoundTripTime) => (_host, _healthyRoundTripTime) = (host, healthyRoundTripTime);
+
     public async Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)
     {
         try
         {
             using var ping = new Ping();
-            var reply = await ping.SendPingAsync(Host);
+            var reply = await ping.SendPingAsync(_host);
             switch (reply.Status)
             {
                 case IPStatus.Success:
-                    return (reply.RoundtripTime > HealthyRoundTripTime)
-                        ? HealthCheckResult.Degraded()
-                        : HealthCheckResult.Healthy();
+                    var message = $"ICMP to {_host} took {reply.RoundtripTime} ms.";
+                    return (reply.RoundtripTime > _healthyRoundTripTime)
+                        ? HealthCheckResult.Degraded(message)
+                        : HealthCheckResult.Healthy(message);
                 default:
-                    return HealthCheckResult.Unhealthy();
+                    var error = $"ICMP to {_host} failed: {reply.Status}";
+                    return HealthCheckResult.Unhealthy(error);
             }
         }
         catch (Exception e)
         {
-            return HealthCheckResult.Unhealthy();
+            var error = $"ICMP failed: {e.Message}";
+            return HealthCheckResult.Unhealthy(error);
         }
     }
 }
