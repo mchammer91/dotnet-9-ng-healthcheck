@@ -44,9 +44,9 @@ node_modules/**
 *.sbr
 *.scc
 *.DotSettings
-[Bb]in
-[Dd]ebug*/**
-obj/
+*[Bb]in
+*[Dd]ebug*/**
+*obj/
 [Rr]elease*/**
 _ReSharper*/**
 NDependOut/**
